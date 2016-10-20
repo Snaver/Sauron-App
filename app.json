@@ -1,0 +1,69 @@
+{
+  "name": "Sauron",
+  "description": "Monitor changes in Whois, DNS systems.",
+  "keywords": [
+    "dns",
+    "whois",
+    "github",
+    "gist",
+    "bitbucket",
+    "snippet"
+  ],
+  "website": "https://github.com/Snaver/Sauron",
+  "repository": "https://github.com/Snaver/Sauron",
+  "scripts": {
+    "postdeploy": "php artisan migrate --seed"
+  },
+  "env": {
+    "APP_KEY": {
+      "description": "php artisan key:generate",
+      "generator": "secret"
+    },
+    "APP_LOG": {
+      "description": "https://devcenter.heroku.com/articles/php-logging#laravel",
+      "value": "errorlog"
+    },
+    "DB_CONNECTION": {
+      "description": "https://elements.heroku.com/addons/heroku-postgresql",
+      "value": "pgsql"
+    },
+    "QUEUE_DRIVER": {
+      "description": "https://laravel.com/docs/5.3/queues#introduction",
+      "value": "database"
+    },
+    "GITHUB_TOKEN": {
+      "required": false,
+      "description": "https://github.com/settings/tokens",
+      "value": ""
+    },
+    "GITHUB_GIST_ID": {
+      "required": false,
+      "description": "https://gist.github.com/",
+      "value": ""
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "image": "heroku/php",
+  "addons": [
+    {
+      "plan": "scheduler:standard"
+    },
+    {
+      "plan": "heroku-postgresql:hobby-dev"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
