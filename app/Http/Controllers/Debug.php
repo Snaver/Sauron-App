@@ -18,7 +18,6 @@ class Debug extends Controller
 
     public function github()
     {
-        //dd( GitHub::gist()->all() );
-        dd( GitHub::gist()->show( '772bdb44974246662cd05b36469e77e3' ) );
+        dd( GitHub::gist()->all() );
     }
 }
