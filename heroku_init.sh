@@ -98,4 +98,7 @@ heroku run php artisan migrate --force --seed
 
 heroku addons --app "$1"
 
+# Keep everything fresh
+heroku restart
+
 exit "$EXIT_CODE"
