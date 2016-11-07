@@ -14,11 +14,11 @@ Primarily built for running on the [Heroku platform](https://www.heroku.com), yo
 # Install & Setup
 
 * Run `./heroku_init.sh` or use above Heroku deploy button
-* Set heroku config vars JSONWHOISAPI (https://jsonwhoisapi.com/register), GITHUB_TOKEN (https://github.com/settings/tokens") & GITHUB_GIST_ID (https://gist.github.com/)
+* Set heroku custom config vars `JSONWHOISAPI` (https://jsonwhoisapi.com/register), `GITHUB_TOKEN` (https://github.com/settings/tokens") & `GITHUB_GIST_ID` (https://gist.github.com/)
 * Setup Scheduler / Jobs
-** Wake up Heroku dyno if running on the free plan - Daily `curl https://${HEROKU_APP_NAME}`
-** Run DNS Checks - Daily `php artisan checks:run dns`
-** Run Whois Checks - Daily `php artisan checks:run whois`
+  * Wake up Heroku dyno if running on the free plan - Daily `curl https://${HEROKU_APP_NAME}`
+  * Run DNS Checks - Daily `php artisan checks:run dns`
+  * Run Whois Checks - Daily `php artisan checks:run whois`
 
 # TODO
 
