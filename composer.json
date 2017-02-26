@@ -15,9 +15,8 @@
         "ext-pcntl": "*",
         "laravel/framework": "5.3.*",
         "guzzlehttp/guzzle": "^6.2",
-        "graham-campbell/bitbucket": "^1.0",
-        "graham-campbell/github": "^4.4",
-        "mashape/unirest-php": "^3.0"
+        "hmazter/laravel-schedule-list": "^0.1.4",
+        "snaver/sauron": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -55,6 +54,7 @@
             "php artisan optimize"
         ]
     },
+    "minimum-stability": "dev",
     "config": {
         "prefer-stable": true,
         "preferred-install": "dist"
