@@ -14,7 +14,7 @@ Primarily built for running on the [Heroku platform](https://www.heroku.com), yo
 # Install & Setup
 
 * Run `./heroku_init.sh` or use above Heroku deploy button
-* Set heroku custom config vars `JSONWHOISAPI` (https://jsonwhoisapi.com/register), `GITHUB_TOKEN` (https://github.com/settings/tokens") & `GITHUB_GIST_ID` (https://gist.github.com/)
+* Set heroku custom config vars - `SAURON_EMAIL`, `SAURON_JSONWHOISAPI_API_KEY` and `SAURON_JSONWHOISAPI_CUSTOMER_ID` (https://jsonwhoisapi.com/register), `GITHUB_TOKEN` (https://github.com/settings/tokens") and `SAURON_GITHUB_GIST_ID` (https://gist.github.com/)
 * Setup Scheduler / Jobs
   * Wake up Heroku dyno if running on the free plan - Daily `curl https://${HEROKU_APP_NAME}`
   * Run DNS Checks - Daily `php artisan checks:run dns`

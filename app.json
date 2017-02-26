@@ -31,9 +31,19 @@
       "description": "https://laravel.com/docs/5.3/queues#introduction",
       "value": "database"
     },
-    "JSONWHOISAPI": {
+    "SAURON_EMAIL": {
+      "required": true,
+      "description": "Change contact email",
+      "value": ""
+    },
+    "SAURON_JSONWHOISAPI_APIChange contact email_KEY": {
       "required": true,
       "description": "https://jsonwhoisapi.com/register",
+      "value": ""
+    },
+    "SAURON_JSONWHOISAPI_CUSTOMER_ID": {
+      "required": true,
+      "description": "https://jsonwhoisapi.com/profile#profile",
       "value": ""
     },
     "GITHUB_TOKEN": {
@@ -41,7 +51,7 @@
       "description": "https://github.com/settings/tokens",
       "value": ""
     },
-    "GITHUB_GIST_ID": {
+    "SAURON_GITHUB_GIST_ID": {
       "required": false,
       "description": "https://gist.github.com/",
       "value": ""
