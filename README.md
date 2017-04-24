@@ -1,5 +1,5 @@
 # Sauron
-Laravel 5.3 project to monitor changes in Whois and DNS records.
+Personal Laravel 5.3 project to monitor, notify and record changes in Whois and DNS records. Built to get up to speed with new Laravel technology and play with the free tier provided by Heroku.
 
 Utilising [Laravel Queues & Jobs](https://laravel.com/docs/5.3/queues), checks can be performed on a set of defined domains for either DNS or Whois records. The [Laravel Scheduler](https://laravel.com/docs/5.3/scheduling) can be used to arrange when these checks are run.
 
